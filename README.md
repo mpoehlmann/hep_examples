@@ -1,4 +1,7 @@
-# hep_examples
+# High Energy Physics Examples
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mpoehlmann/hep_examples/master?urlpath=lab)
+
 High energy physics examples and tutorials.
 
 
@@ -14,16 +17,16 @@ This tutorial is divided into the following chapters:
   1. Getting started with ``bash`` and ``jupyter``
   1. Setting up computing environment
 1. Basic ``C/C++``, ``Python``, and ``Julia``
-1.a Advanced Python
+1. Advanced Python
   - Speed up code with ``numba``
   - HEP analysis with ``uproot`` and ``awkward-array`` packages
 1. Advanced C/C++
 1. Advanced Julia
 1. ROOT
 1. Plotting Library
-1. Geant4
 1. Machine Learning
   - Applications of machine learning in HEP
+1. Geant4
 
 ## Examples
 The ``examples`` folder contains runable analysis macros.

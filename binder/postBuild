@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Install a JupyterLab extension for demonstration purposes
+jupyter labextension install @jupyterlab/celltags @jupyterlab/shortcutui @jupyter-widgets/jupyterlab-manager @jupyterlab/commenting-extension @jupyterlab/toc @ijmbarr/jupyterlab_spellchecker jupyterlab-drawio @aquirdturtle/collapsible_headings @ryantam626/jupyterlab_sublime
+
+
