@@ -1,0 +1,32 @@
+# To run: conda env create --file environment.yml
+
+name: hep-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - cython
+  - h5py
+  - ipywidgets
+  - jupyterlab=2.1.5
+  - line_profiler
+  - lmfit
+  - matplotlib
+  - memory_profiler
+  - mpmath
+  - multiprocess
+  - numba
+  - numericalunits
+  - numexpr
+  - numpy
+  - pandas
+  - paramiko
+  - python=3.7.6
+  - root=6.18.04
+  - root_numpy
+  - scipy
+  - scikit-learn
+  - sympy
+  - tqdm
+  - uncertainties
+  - uproot
