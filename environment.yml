@@ -1,3 +1,4 @@
+# Contains packages installed with conda
 # To run: conda env create --file environment.yml
 
 name: hep-env
@@ -5,9 +6,12 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - awkward
   - cython
+  - geant4=10.6.0
   - h5py
   - ipywidgets
+  # - julia=1.0.3 # Currently installing julia this way causes conflicts
   - jupyterlab=2.1.5
   - line_profiler
   - lmfit
@@ -21,6 +25,10 @@ dependencies:
   - numpy
   - pandas
   - paramiko
+  - pip
+  - pip:
+    - awkward1
+    - uproot4
   - python=3.7.6
   - root=6.18.04
   - root_numpy
