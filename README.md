@@ -14,18 +14,18 @@ Feel free to let me know if you discover any bugs or have requests for specific 
 This tutorial is divided into the following chapters:
 
 1. Introduction
-  1. Getting started with ``bash`` and ``jupyter``
-  1. Setting up computing environment
+    1. Getting started with ``bash`` and ``jupyter``
+    1. Setting up computing environment
 1. Basic ``C/C++``, ``Python``, and ``Julia``
 1. Advanced Python
-  - Speed up code with ``numba``
-  - HEP analysis with ``uproot`` and ``awkward-array`` packages
+    1. Speed up code with ``numba``
+    1. HEP analysis with ``uproot`` and ``awkward-array`` packages
 1. Advanced C/C++
 1. Advanced Julia
 1. ROOT
 1. Plotting Library
 1. Machine Learning
-  - Applications of machine learning in HEP
+    1. Applications of machine learning in HEP
 1. Geant4
 
 ## Examples
@@ -34,6 +34,13 @@ The ``examples`` folder contains runable analysis macros.
 ## Tutorials
 The ``tutorials`` folder contains step-by-step instructions for items I wanted to include but didn't want to put in the chapter ``jupyter`` notebooks.
 
+
+## Repository notes 
+This repository uses Python, Julia, and ROOT environments side-by-side.
+The ``environment.yml`` file handles the installation of an anaconda python environment, including the required Python packages. It also installs ROOT
+The ``REQUIRE`` file specifies the Julia packa
+The former corresponds , and the latter corresponds to a Julia environment. 
+Both kernels will be available to you in a built Binder environment.
 
 ## TODO
 - **notebooks**
