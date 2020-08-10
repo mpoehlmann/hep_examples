@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Install JupyterLab extensions
+LAB_EXTENSIONS = ( "@jupyterlab/celltags" "@jupyter-widgets/jupyterlab-manager" "@jupyterlab/commenting-extension" "@jupyterlab/toc" "@ijmbarr/jupyterlab_spellchecker" "jupyterlab-drawio" "@aquirdturtle/collapsible_headings" "@ryantam626/jupyterlab_sublime" )
+for i in ${!LAB_EXTENSIONS[@]}; do
+  jupyter labextension install ${LAB_EXTENSIONS[$i]} --no-build
+done
+jupyter lab build

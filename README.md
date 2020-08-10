@@ -14,12 +14,14 @@ Feel free to let me know if you discover any bugs or have requests for specific 
 This tutorial is divided into the following chapters:
 
 1. Introduction
-    1. Getting started with ``bash`` and ``jupyter``
+    1. Getting started with ``bash`` and ``Jupyter``
     1. Setting up computing environment
-1. Basic ``C/C++``, ``Python``, and ``Julia``
+1. Basic ``Python``, ``C/C++``, and ``Julia``
 1. Advanced Python
-    1. Speed up code with ``numba``
-    1. HEP analysis with ``uproot`` and ``awkward-array`` packages
+    1. "NumPythonic" coding
+    1. Speed up your code with numba and multiprocess
+    1. HEP analysis with uproot and awkward-array
+    1. Code optimization hints
 1. Advanced C/C++
 1. Advanced Julia
 1. ROOT
@@ -28,8 +30,10 @@ This tutorial is divided into the following chapters:
     1. Applications of machine learning in HEP
 1. Geant4
 
+
 ## Examples
 The ``examples`` folder contains runable analysis macros.
+
 
 ## Tutorials
 The ``tutorials`` folder contains step-by-step instructions for items I wanted to include but didn't want to put in the chapter ``jupyter`` notebooks.
@@ -37,20 +41,26 @@ The ``tutorials`` folder contains step-by-step instructions for items I wanted t
 
 ## Repository notes 
 This repository uses Python, Julia, and ROOT environments side-by-side.
-The ``environment.yml`` file handles the installation of an anaconda python environment, including the required Python packages. It also installs ROOT
-The ``REQUIRE`` file specifies the Julia packa
-The former corresponds , and the latter corresponds to a Julia environment. 
-Both kernels will be available to you in a built Binder environment.
+The ``environment.yml`` file handles the installation of an anaconda python environment, including the required Python packages. 
+It also installs ROOT and integrates it with Python.
+The ``REQUIRE`` file specifies the Julia packages to be installed.
+The ``postBuild`` file installs Jupyterlab extensions.
+<!-- Python, ROOT C/C++, and Julia kernels will be available to you in a built Binder environment (FIXME: not true yet, I can't get the Julia or ROOT kernels to work). -->
+
 
 ## TODO
 - **notebooks**
-  - ch 1
+  - ch 1: intro
     - installation
     - jupyter
-  - ch 2
+  - ch 2: basic python, cpp, julia
     - debugging
-  - ch 3
+  - ch 3: advanced python
     - example pstats file
+    - https://realpython.com/numpy-array-programming/
+  - ch 7: plotting
+    - matplotlib colors: https://matplotlib.org/gallery/color/named_colors.html
+    - root colors
 - **examples**
   - 
 - **tutorials**
